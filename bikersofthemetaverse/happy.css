@@ -1,0 +1,355 @@
+body{
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+.navbar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+}
+.thename{
+    font-size: 2rem;
+    margin: 7px;
+}
+.thelinks ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    font-size: 20px;
+}
+.thelinks li{
+    list-style: none;
+}
+.thelinks li a{
+    text-decoration: none;
+    padding: 30px;
+    color: white;
+    font-size: 20px;
+    display: block;
+}
+.thelinks li:hover{
+    background-color: #555;
+}
+.twit{
+    width:60px;
+    margin-top:30px;
+}
+.discordlink{
+    width:80px;
+    height:80px;
+    margin-top:-10px;
+}
+.igram{
+    width:70px;
+    
+}
+.btn{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+.btn .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.thestoryline{
+    color: white;
+    margin: 12px;
+    padding: 11px;
+display: flex;
+flex-direction: column;
+justify-items: center;
+align-items: center;
+}
+.thestoryline h1{
+    text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+line-height: 60px;
+font-size: 35px;
+font-weight: 900px;
+}
+.thestoryline p{
+    color: whitesmoke;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 33px;
+
+}
+.discordbtn{
+    background-color: rgb(175, 8, 175);
+    width: 150px;
+display: flex;
+height: 50px;
+font-size: 19px;
+color: white;
+border-radius: 20px;
+border:none;
+align-items: center;
+justify-items: center;
+
+
+}
+.ass{
+    text-decoration:none;
+}
+.discordbtn span{
+    margin: auto;
+    text-decoration:none;
+}
+.thestoryline .discordbtn{
+    display: flex;
+    place-items: center;
+}
+.artwork{
+    color: white;
+    text-align: center;
+    line-height: 120px;
+}
+.thestoryline .discordbtn{
+    text-align: center;
+}
+.theartspace{
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(3,350px);
+    margin-left: 40px;
+    padding-bottom: 30px;  
+
+}
+.theartbg{
+    display: grid;
+    width:375px;
+height: fit-content;
+    background: #191919;
+    backdrop-filter: blur(10px);
+    padding-top: 20px;
+    border-radius: 20px;
+    display: grid;
+    position: relative;
+    place-items: center;
+    overflow: hidden;
+}
+.theartspace img{
+    width: 350px;
+    justify-self:center ;
+}
+.thearrtbg{
+    display: grid;
+    width:375px;
+height: fit-content;
+    background: #191919;
+    backdrop-filter: blur(10px);
+    padding-top: 20px;
+    border-radius: 20px;
+    display: grid;
+    position: relative;
+    place-items: center;
+    overflow: hidden;
+}
+details{
+    font-size: 25px;
+    margin: 20px;
+    
+}
+.thenum{
+text-align: center;
+margin-top: 50px;
+font-size: 25px;
+}
+.reason{
+    background-color: white;
+    margin: 0px;
+    padding: 15px;
+    width: 100%;
+}
+.theplan{
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    line-height: 70px;
+}
+.theone{
+    font-size: 25px;
+    margin: 5px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.togglebtn{
+    display: none;
+}
+.faqs{
+background-color: white;
+padding-top: 30px;
+margin-bottom: 0px;
+}
+.last{
+    display: flex;
+flex-direction: row;
+margin-top: 0px;
+justify-content: space-between;
+}
+.twitter{
+width: 300px;
+height: 300px;
+}
+.ig{
+    width: 300px;
+    height: 300px;
+}
+.discord{
+width: 300px;
+height: 300px;
+}
+@media (max-width:850px) {
+    *{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .theartspace{
+        display: grid;
+        grid-template-columns: 200px 200px;
+        
+    }
+.theartbg{
+margin-left: 47px;
+}
+}
+@media (max-width: 600px) {
+*{
+box-sizing:border-box ;
+}
+.navbar{
+padding-bottom: 40px;
+flex-direction: column;
+align-items: flex-start;
+}
+.btn{
+display: flex;
+
+}
+.thelinks{
+width: 100%;
+display: none;
+justify-items: center;
+text-align: center;
+margin-top: 10px;
+
+
+}
+.thelinks ul{
+    display:flex;
+flex-direction: column;
+width: 100%;
+}
+.thestoryline{
+padding-bottom: 30px;
+}
+.thestoryline h1{
+    font-size: 29px;
+line-height: 30px;
+}
+.thestoryline p{
+line-height: 30px;
+margin-top: 50px;
+font-size: 19px;
+}
+.discordbtn{
+    place-items: center;
+    place-self: center;
+}
+.thename{
+display: flex;
+box-sizing: content-box;
+    font-size: 29px;
+    width: fit-content;
+    line-height: 0px;
+margin-top: 29px;
+margin-left: 2px;
+}
+.theartspace{
+display: grid;
+grid-template-columns: 100px;
+padding-top: 30px;
+}
+.theartspace img{
+    width: 275px;
+display: grid;
+align-self: center;
+margin-left: -11px;
+}
+.thearrtbg{
+width: max-content;
+display: flex;
+flex-direction:column;
+place-self: center;
+place-items: center;
+margin-left: 210px;
+}
+.theartbg{
+    width: max-content;
+    display: flex;
+    flex-direction:column;
+    place-self: center;
+    place-items: center;
+    margin-left: 210px;
+padding: 15px;
+}
+.artwork{
+margin: auto;
+}
+.reason{
+    max-width: 400px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 40px;
+border-radius: 10px;
+padding: 10px;
+}
+.theone{
+    margin: 10px;
+    
+}
+.faqs{
+display: flex;
+flex-direction: column;
+line-height: 20px;
+}
+summary{
+font-size: 20px;
+line-height: 40px;
+}
+p{
+font-size: 17px;
+}
+.togglebtn{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    margin-left: auto;
+    background-color: transparent;
+}
+.last{
+    flex-direction: column-reverse;
+}
+.ig .twitter .discord{
+    width:20px;
+}
+}
